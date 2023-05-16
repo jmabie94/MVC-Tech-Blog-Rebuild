@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Jack Mabie's Tech Blog</title>
+        <link 
+        rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+        <link 
+        rel="stylesheet" 
+        href="/css/styles.css">
+    </head>
+    <header class="section">
+        <div class="container">
+            <h1 class="title">
+                The Thought's Tech Blog
+            </h1>
+        </div>
+    </header>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item header-logo" href='/'>
+            <img src="/images/whosethot.png" width="36" height="36">
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href='/dashboard'>
+                    Your Dashboard
+                </a>
+
+                <a class="navbar-item" href="/newpost">
+                    Create New Blog Post
+                </a>
+
+                <a class="navbar-item" href="/allusers">
+                    View Blog Posts By User
+                </a>
+            </div>
+            
+            <div class="navbar-end">
+            {{#if logged_in}}
+                <div class="navbar-item">
+                    Logged in as&nbsp;<strong>{{username}}</strong>
+                </div>
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a id="logout" class="button is-light logoutBtn">
+                            Log Out
+                        </a>
+                    </div>
+                </div>
+            {{else}}
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-primary goSignUpBtn">
+                            <strong>Sign up</strong>
+                        </a>
+                        <a class="button is-light goLogInBtn">
+                            Log in
+                        </a>
+                    </div>
+                </div>
+            {{/if}}
+            </div>
+        </div>
+    </nav>
+    <body>
+        <main>
+            {{{ body }}}
+        </main>
+    </body>
+    <footer>
+
+    </footer>
+    <script src="/javascript/logout.js"></script>
+    <script src="/javascript/login.js"></script>
+    <script src="/javascript/signup.js"></script>
+</html>

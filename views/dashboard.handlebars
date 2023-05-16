@@ -1,0 +1,51 @@
+<h2 class="title is-2">Here is Your Dashboard, {{username}}</h2>
+<h4 class="subtitle is-4">View All Your Blog Posts Below:</h4>
+<table class="table is-bordered is-striped is-hoverable is-fullwidth">
+    <thead>
+        <tr>
+            <th><abbr title="Blog Post Title">Title</abbr></th>
+            <th><abbr title="Date Created">Date</abbr></th>
+            <th><abbr title="Number of Comments">Comments</abbr></th>
+            <th>Blog Post Content</th>
+            {{#if blogposts}}
+            <th>Edit</th>
+            <th>Delete</th>
+            {{/if}}
+        </tr>
+    </thead>
+    <tfoot>
+        <tr>
+            <th><abbr title="Blog Post Title">Title</abbr></th>
+            <th><abbr title="Date Created">Date</abbr></th>
+            <th><abbr title="Number of Comments">Comments</abbr></th>
+            <th>Blog Post Content</th>
+            {{#if blogposts}}
+            <th>Edit</th>
+            <th>Delete</th>
+            {{/if}}
+        </tr>
+    </tfoot>
+    <tbody>
+        {{#if blogposts}}
+        {{#each blogposts as |blogpost|}}
+        <tr>
+            <td><a href="/blogposts/{{blogpost.id}}">{{blogpost.title}}</a></td>
+            <td>{{format_date blogpost.created_at}}</td>
+            <td>{{blogpost.comments.length}}</td>
+            <td>{{blogpost.description}}</td>
+            <td><button class="button is-light editPostBtn">Edit Post</button></td>
+            <td><button class="button is-danger deletePostBtn">Delete Post</button></td>
+        </tr>
+        {{/each}}
+        {{else}}
+        <tr>
+            <td><a href="/newpost">Create Your First Blog Post!</a></td>
+            <td>N/A</td>
+            <td>N/A</td>
+            <td>Once You Have Blog Posts They Will Appear Here</td>
+        </tr>
+        {{/if}}
+    </tbody>
+</table>
+<script src="/javascript/editpost.js"></script>
+<script src="/javascript/deletepost.js"></script>

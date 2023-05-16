@@ -1,0 +1,45 @@
+<table class="table is-bordered is-striped is-hoverable is-fullwidth">
+    <thead>
+        <tr>
+            <th>Username</th>
+            <th>Blog Post Title</th>
+            <th><abbr title="Date Created">Post Date</abbr></th>
+            <th><abbr title="Number of Comments">Comments</abbr></th>
+            <th>Blog Post Content</th>
+        </tr>
+    </thead>
+    <tfoot>
+        <tr>
+            <th>Username</th>
+            <th>Blog Post Title</th>
+            <th><abbr title="Date Created">Post Date</abbr></th>
+            <th><abbr title="Number of Comments">Comments</abbr></th>
+            <th>Blog Post Content</th>
+        </tr>
+    </tfoot>
+    <tbody>
+        {{#if blogposts}}
+        {{#each blogposts as |blogpost|}}
+        <tr>
+            <td><a href="/user/{{blogpost.user.id}}">{{blogpost.user.username}}</a></td>
+            <td><a href="/blogposts/{{blogpost.id}}">{{blogpost.title}}</a></td>
+            <td>{{format_date blogpost.created_at}}</td>
+            <td>{{blogpost.comments.length}}</td>
+            <td>{{blogpost.description}}</td>
+        </tr>
+        {{/each}}
+        {{else}}
+        <tr>
+            <td>No Blog Posts Exist Yet</td>
+            <td><a href="/newpost">Create The First Blog Post!</a></td>
+            <td>N/A</td>
+            <td>N/A</td>
+            <td>Once Blog Posts Have Been Created, They Will Appear Here!</td>
+        </tr>
+        {{/if}}
+    </tbody>
+</table>
+
+<script src="/javascript/logout.js"></script>
+<script src="/javascript/login.js"></script>
+<script src="/javascript/signup.js"></script>
