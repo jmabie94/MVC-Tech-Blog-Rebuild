@@ -3,6 +3,10 @@ main {
     justify-content: center;
 }
 
+.navbar-item img {
+    max-height: max-content !important;
+}
+
 form {
     width: 80%;
 }
@@ -13,4 +17,19 @@ form {
 
 .field.is-grouped {
     justify-content: center !important;
+}
+
+@media screen and (max-width: 1023px) {
+    .navbar-dropdown.is-hidden-touch {
+        display: none;
+    }
+
+    .navbar-burger.is-active+.navbar-menu {
+        display: block;
+        position: absolute;
+        right: 0;
+        left: auto;
+        top: 100%;
+        transform: translateX(100%);
+    }
 }
