@@ -64,7 +64,7 @@ router.get('/newpost', withAuth, async (req, res) => {
 });
 
 // gets ALL blogposts FROM the logged_in user
-router.get('dashboard', withAuth, async (req, res) => {
+router.get('/dashboard', withAuth, async (req, res) => {
   try {
     const allUserPosts = await BlogPost.findAll({
       where: {

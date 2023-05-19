@@ -1,47 +1,61 @@
-<div class="field">
-  <label class="label">Name</label>
-  <div class="control">
-    <input 
-    class="input" 
-    type="text" 
-    placeholder="e.g Alex Smith"
-    id="user-username">
-  </div>
-</div>
-
-<div class="field">
-  <label class="label">Email</label>
-  <div class="control">
-    <input 
-    class="input" 
-    type="email" 
-    placeholder="e.g. alexsmith@gmail.com"
-    id="user-email">
-  </div>
-</div>
-
-<div class="field">
-    <label class="label">Password</label>
-    <div class="control">
-        <input 
-        class="input" 
-        type="password" 
-        placeholder="Enter New Password"
-        id="user-password">
+<form id="signup-form">
+  <div class="field">
+    <label class="label">Name</label>
+    <div class="control has-icons-left">
+      <input 
+      class="input" 
+      type="text" 
+      placeholder="e.g. Alex Smith"
+      id="user-username">
     </div>
-</div>
+  </div>
 
-<div class="field is-grouped">
-  <p class="control">
-    <a class="button is-primary processBtn">
-      Sign Up
-    </a>
-  </p>
-  <p class="control">
-    <a class="button is-light cancelBtn">
-      Cancel
-    </a>
-  </p>
-</div>
+  <div class="field">
+    <label class="label">Email</label>
+    <div class="control has-icons-left has-icons-right">
+      <input 
+      class="input" 
+      type="email" 
+      placeholder="e.g. alexsmith@gmail.com"
+      id="user-email">
+      <span class="icon is-small is-left">
+        <i class="fas fa-envelope"></i>
+      </span>
+      <span class="icon is-small is-right">
+        <i class="fas fa-check"></i>
+      </span>
+    </div>
+  </div>
+
+  <div class="field">
+      <label class="label">Password</label>
+      <div class="control has-icons-left">
+          <input 
+          class="input" 
+          type="password" 
+          placeholder="Enter New Password"
+          id="user-password">
+          <span class="icon is-small is-left">
+            <i class="fas fa-lock"></i>
+          </span>
+      </div>
+  </div>
+
+  <div class="field is-grouped">
+    <p class="control">
+      <button type="submit" class="button is-primary processBtn">
+        Submit
+      </button>
+    </p>
+    <p class="control has-icons-left has-icons-right" style="margin-top: 7.63px;">
+      Or
+    </p>
+    <p class="control">
+      <button id="cancelBtn" class="button is-light cancelBtn">
+        Cancel
+      </button>
+    </p>
+  </div>
+</form>
 
 <script src="/javascript/signup.js"></script>

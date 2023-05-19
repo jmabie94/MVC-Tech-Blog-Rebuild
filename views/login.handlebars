@@ -1,6 +1,7 @@
 <form id="login-form">
   <div class="field">
-    <p class="control has-icons-left has-icons-right">
+    <label class="label">Email</label>
+    <div class="control has-icons-left has-icons-right">
       <input 
       class="input" 
       type="email" 
@@ -12,10 +13,12 @@
       <span class="icon is-small is-right">
         <i class="fas fa-check"></i>
       </span>
-    </p>
+    </div>
   </div>
+
   <div class="field">
-    <p class="control has-icons-left">
+    <label class="label">Password</label>
+    <div class="control has-icons-left">
       <input 
       class="input" 
       type="password" 
@@ -24,21 +27,25 @@
       <span class="icon is-small is-left">
         <i class="fas fa-lock"></i>
       </span>
-    </p>
+    </div>
   </div>
+
   <div class="field is-grouped">
     <p class="control">
       <button type="submit" class="button is-success loginBtn">
         Login
       </button>
     </p>
-    <p class="control">
-      Or <button id="signup-btn" class="button is-light goSignUpBtn">
+    <p class="control has-icons-left has-icons-right" style="margin-top: 7.63px;">
+      Or
+    </p>
+    <p class="control"> 
+      <button id="signup-btn" class="button is-light goSignUpBtn">
         Sign Up
-        </button>
+      </button>
     </p>
   </div>
 </form>
 
 <script src="/javascript/login.js"></script>
-<script src="/javascript/signup.js"></script>
+{{!-- <script src="/javascript/signup.js"></script> --}}

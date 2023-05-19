@@ -1,0 +1,16 @@
+main {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    width: 80%;
+}
+
+.label {
+    text-align: center;
+}
+
+.field.is-grouped {
+    justify-content: center !important;
+}
