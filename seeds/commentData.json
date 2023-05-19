@@ -1,0 +1,102 @@
+[
+    {
+      "comment_text": "Lisa, I guess music is okay if you're into that nerdy stuff. But you won't catch me playing any instruments!",
+      "post_id": 1,
+      "user_id": 2
+    },
+    {
+      "comment_text": "Bart, your crazy adventures always crack me up! Keep being the ultimate troublemaker of Springfield.",
+      "post_id": 2,
+      "user_id": 3
+    },
+    {
+      "comment_text": "Homer, your daily mishaps are hilarious! I can't help but laugh at your misadventures. Keep 'em coming!",
+      "post_id": 3,
+      "user_id": 4
+    },
+    {
+      "comment_text": "Marge, your ability to stay calm and loving in the midst of chaos is truly admirable. You're the heart and soul of the Simpson family!",
+      "post_id": 4,
+      "user_id": 5
+    },
+    {
+      "comment_text": "Maggie, you may not say much, but your adorable giggles always brighten up the room. Keep spreading the joy!",
+      "post_id": 5,
+      "user_id": 6
+    },
+    {
+      "comment_text": "Ned, your devotion to being the goody two-shoes of Springfield is something else. I'll try not to roll my eyes too hard!",
+      "post_id": 6,
+      "user_id": 1
+    },
+    {
+      "comment_text": "Maude, your words touched my heart. Your kindness and love are truly missed. Rest in peace, dear neighbor.",
+      "post_id": 7,
+      "user_id": 2
+    },
+    {
+      "comment_text": "Mr. Burns, your thirst for power and money knows no bounds. Keep ruling over Springfield with your iron fist!",
+      "post_id": 8,
+      "user_id": 3
+    },
+    {
+      "comment_text": "Smithers, your unwavering loyalty to Mr. Burns is both admirable and a bit puzzling. You must really enjoy fetching his slippers!",
+      "post_id": 9,
+      "user_id": 4
+    },
+    {
+      "comment_text": "Krusty, your jokes always make me laugh until my sides hurt! Thanks for bringing humor to the people of Springfield.",
+      "post_id": 10,
+      "user_id": 5
+    },
+    {
+      "comment_text": "Lisa, I guess music is okay if it helps you get good grades and all. But don't expect me to start playing the saxophone!",
+      "post_id": 11,
+      "user_id": 6
+    },
+    {
+      "comment_text": "Bart, your pranks keep Springfield Elementary on its toes! Can't wait to hear about your next crazy scheme.",
+      "post_id": 12,
+      "user_id": 7
+    },
+    {
+      "comment_text": "Homer, your daily struggles at the power plant are epic! Keep dodging work and making us laugh with your antics.",
+      "post_id": 13,
+      "user_id": 8
+    },
+    {
+      "comment_text": "Marge, your dedication to keeping the family together is truly admirable. Thanks for putting up with Homer's shenanigans!",
+      "post_id": 14,
+      "user_id": 9
+    },
+    {
+      "comment_text": "Maggie, your innocent giggles brighten up the room! Keep being the adorable little Simpson we all love.",
+      "post_id": 15,
+      "user_id": 10
+    },
+    {
+      "comment_text": "Ned, your unwavering faith and optimism are... well, something. I'll try not to burst into flames when I'm near you!",
+      "post_id": 16,
+      "user_id": 1
+    },
+    {
+      "comment_text": "Maude, your memory lives on. You were a shining light of kindness in Springfield. We miss you dearly.",
+      "post_id": 17,
+      "user_id": 2
+    },
+    {
+      "comment_text": "Mr. Burns, your insatiable hunger for power and money never ceases to amaze me. Keep being the corporate villain we all love to hate!",
+      "post_id": 18,
+      "user_id": 3
+    },
+    {
+      "comment_text": "Smithers, your unwavering loyalty to Mr. Burns is both commendable and a little disturbing. But hey, everyone needs a sidekick!",
+      "post_id": 19,
+      "user_id": 4
+    },
+    {
+      "comment_text": "Krusty, your jokes always hit the mark! Thanks for keeping Springfield entertained with your wacky sense of humor.",
+      "post_id": 20,
+      "user_id": 5
+    }
+]
