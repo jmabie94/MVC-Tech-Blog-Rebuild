@@ -1,62 +1,62 @@
 [
-    {
-        "id": 1,
-        "username": "Lisa",
-        "email": "lisa.simpson@gmail.com",
-        "password": "bartistheworst"
-    },
-    {
-        "id": 2,
-        "username": "Bart",
-        "email": "bart.simpson@gmail.com",
-        "password": "eatmyshorts"
-    },
-    {
-        "id": 3,
-        "username": "Homer",
-        "email": "homer.simpson@gmail.com",
-        "password": "doh1234"
-    },
-    {
-        "id": 4,
-        "username": "Marge",
-        "email": "marge.simpson@gmail.com",
-        "password": "bluehairdonotcare"
-    },
-    {
-        "id": 5,
-        "username": "Maggie",
-        "email": "maggie.simpson@gmail.com",
-        "password": "pacifier123"
-    },
-    {
-        "id": 6,
-        "username": "Ned",
-        "email": "ned.flanders@gmail.com",
-        "password": "hiiddlyho"
-    },
-    {
-        "id": 7,
-        "username": "Maude",
-        "email": "maude.flanders@gmail.com",
-        "password": "lovestoodiddly"
-    },
-    {
-        "id": 8,
-        "username": "MrBurns",
-        "email": "mr.burns@gmail.com",
-        "password": "excellent!"
-    },
-    {
-        "id": 9,
-        "username": "Smithers",
-        "email": "waylon.smithers@gmail.com",
-        "password": "secretary007"
-    },
-    {
-        "id": 10,
-        "username": "Krusty",
-        "email": "krusty.clown@gmail.com",
-        "password": "hahaha123"
-    }
+  {
+    "id": 1,
+    "username": "Lisa",
+    "email": "lisa.simpson@gmail.com",
+    "password": "bartistheworst"
+  },
+  {
+    "id": 2,
+    "username": "Bart",
+    "email": "bart.simpson@gmail.com",
+    "password": "eatmyshorts"
+  },
+  {
+    "id": 3,
+    "username": "Homer",
+    "email": "homer.simpson@gmail.com",
+    "password": "doh1234"
+  },
+  {
+    "id": 4,
+    "username": "Marge",
+    "email": "marge.simpson@gmail.com",
+    "password": "bluehairdonotcare"
+  },
+  {
+    "id": 5,
+    "username": "Maggie",
+    "email": "maggie.simpson@gmail.com",
+    "password": "pacifier123"
+  },
+  {
+    "id": 6,
+    "username": "Ned",
+    "email": "ned.flanders@gmail.com",
+    "password": "hiiddlyho"
+  },
+  {
+    "id": 7,
+    "username": "Maude",
+    "email": "maude.flanders@gmail.com",
+    "password": "lovestoodiddly"
+  },
+  {
+    "id": 8,
+    "username": "MrBurns",
+    "email": "mr.burns@gmail.com",
+    "password": "excellent!"
+  },
+  {
+    "id": 9,
+    "username": "Smithers",
+    "email": "waylon.smithers@gmail.com",
+    "password": "secretary007"
+  },
+  {
+    "id": 10,
+    "username": "Krusty",
+    "email": "krusty.clown@gmail.com",
+    "password": "hahaha123"
+  }
 ]

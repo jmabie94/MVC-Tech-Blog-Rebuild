@@ -1,86 +1,97 @@
-<!DOCTYPE html>
 <html>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset='utf-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
     <title>Springfield Social Blog</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="/css/styles.css">
-</head>
+    <link
+      rel='stylesheet'
+      href='https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css'
+    />
+    <link rel='stylesheet' href='/css/styles.css' />
+  </head>
 
-<body>
-    <header class="section header-bg">
-        <div class="container">
-            <h1 class="title">
-                Springfield Social Blog
-            </h1>
-        </div>
-        <img src="/media/simpsonsbackground.jpg" alt="Background Image" class="header-background">
+  <body>
+    <header class='section header-bg'>
+      <div class='container'>
+        <h1 class='title'>
+          Springfield Social Blog
+        </h1>
+      </div>
+      <img
+        src='/media/simpsonsbackground.jpg'
+        alt='Background Image'
+        class='header-background'
+      />
     </header>
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-            <a class="navbar-item header-logo" href='/'>
-                <img src="/media/simpsonslogo.jpg" width="60px" height="60px">
-            </a>
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
-                data-target="navbarBasicExample">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
+    <nav class='navbar' role='navigation' aria-label='main navigation'>
+      <div class='navbar-brand'>
+        <a class='navbar-item header-logo' href='/'>
+          <img src='/media/simpsonslogo.jpg' width='60px' height='60px' />
+        </a>
+        <a
+          role='button'
+          class='navbar-burger'
+          aria-label='menu'
+          aria-expanded='false'
+          data-target='navbarBasicExample'
+        >
+          <span aria-hidden='true'></span>
+          <span aria-hidden='true'></span>
+          <span aria-hidden='true'></span>
+        </a>
+      </div>
+      <div id='navbarBasicExample' class='navbar-menu'>
+        <div class='navbar-start' id='navstart'>
+          <a class='navbar-item' href='/dashboard'>
+            Your Dashboard
+          </a>
+          <a class='navbar-item' href='/newpost'>
+            Create New Blog Post
+          </a>
+          <a class='navbar-item' href='/allusers'>
+            View Blog Posts By User
+          </a>
         </div>
-        <div id="navbarBasicExample" class="navbar-menu">
-            <div class="navbar-start" id="navstart">
-                <a class="navbar-item" href='/dashboard'>
-                    Your Dashboard
-                </a>
-                <a class="navbar-item" href="/newpost">
-                    Create New Blog Post
-                </a>
-                <a class="navbar-item" href="/allusers">
-                    View Blog Posts By User
-                </a>
+        <div class='navbar-end' id='navend'>
+          {{#if logged_in}}
+            <div class='navbar-item'>
+              Logged in as&nbsp;<strong>{{username}}</strong>
             </div>
-            <div class="navbar-end" id="navend">
-                {{#if logged_in}}
-                <div class="navbar-item">
-                    Logged in as&nbsp;<strong>{{username}}</strong>
-                </div>
-                <div class="navbar-item">
-                    <div class="buttons">
-                        <a id="logout" class="button is-light logoutBtn">
-                            Log Out
-                        </a>
-                    </div>
-                </div>
-                {{else}}
-                <div class="navbar-item">
-                    <div class="buttons">
-                        <a class="button is-primary" href="/signup">
-                            <strong>Signup</strong>
-                        </a>
-                        <a class="button is-light" href="/login">
-                            <strong>Login</strong>
-                        </a>
-                    </div>
-                </div>
-                {{/if}}
+            <div class='navbar-item'>
+              <div class='buttons'>
+                <a id='logout' class='button is-light logoutBtn'>
+                  Log Out
+                </a>
+              </div>
             </div>
+          {{else}}
+            <div class='navbar-item'>
+              <div class='buttons'>
+                <a class='button is-primary' href='/signup'>
+                  <strong>Signup</strong>
+                </a>
+                <a class='button is-light' href='/login'>
+                  <strong>Login</strong>
+                </a>
+              </div>
+            </div>
+          {{/if}}
         </div>
+      </div>
     </nav>
 
     <body>
-        <main>
-            {{{ body }}}
-        </main>
+      <main>
+        {{{body}}}
+      </main>
     </body>
     <footer>
 
     </footer>
 
-    <script src="/javascript/logout.js"></script>
-    <script src="/javascript/navbarburger.js"></script>
-</body>
+    <script src='/javascript/logout.js'></script>
+    <script src='/javascript/navbarburger.js'></script>
+  </body>
 
 </html>

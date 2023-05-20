@@ -1,102 +1,102 @@
 [
-    {
-      "title": "The Importance of Music Education",
-      "description": "As a young prodigy, I believe music education is key to nurturing talent and fostering creativity. Let's harmonize our way to a brighter future!",
-      "user_id": 1
-    },
-    {
-      "title": "Pranks, Skateboards, and Adventure",
-      "description": "Being a mischievous troublemaker, I've got plenty of tales to share. Join me as we embark on crazy escapades together!",
-      "user_id": 2
-    },
-    {
-      "title": "A Day in the Life of Homer Simpson",
-      "description": "D'oh! Follow me on a journey through my daily struggles, from surviving at work to dodging chores. Life with me is never boring!",
-      "user_id": 3
-    },
-    {
-      "title": "The Joys and Challenges of Motherhood",
-      "description": "From managing a chaotic household to finding time for self-care, being a dedicated mom has its ups and downs. Let's embrace the beauty of motherhood together!",
-      "user_id": 4
-    },
-    {
-      "title": "Silent Wisdom: Lessons from a Pacifier",
-      "description": "Goo goo ga ga! Though I may be small, I have a lot to say. Discover the profound insights I've gathered from the world around me.",
-      "user_id": 5
-    },
-    {
-      "title": "Embracing Neighborly Love",
-      "description": "Hi-diddly-ho, neighborinos! Join me as we explore the values of kindness, community, and spreading positivity in our neighborhood.",
-      "user_id": 6
-    },
-    {
-      "title": "Remembering Maude: An Angel Among Us",
-      "description": "In loving memory of my dear late wife, Maude. Her spirit continues to guide us, reminding us to cherish each precious moment.",
-      "user_id": 7
-    },
-    {
-      "title": "Excellence and the Pursuit of Power",
-      "description": "Excellent! Step into the world of corporate dominance and learn the art of success from yours truly, Montgomery Burns.",
-      "user_id": 8
-    },
-    {
-      "title": "Confessions of a Loyal Assistant",
-      "description": "Mr. Burns may be the boss, but my secrets hold the key to his true nature. Join me in the shadows as we uncover his hidden world.",
-      "user_id": 9
-    },
-    {
-      "title": "The Humor Behind the Makeup",
-      "description": "Hey hey! Welcome to my world of laughter, failed gags, and the struggles of being a clown. Let's discover the truth behind the greasepaint!",
-      "user_id": 10
-    },
-    {
-      "title": "Navigating the World of Jazz",
-      "description": "From swing to bebop, explore the rich history and captivating rhythms of jazz. Join me on a melodic journey through the evolution of this iconic genre.",
-      "user_id": 1
-    },
-    {
-      "title": "Bart's Guide to Outsmarting Authority",
-      "description": "Principal Skinner, beware! Learn my top tips and tricks for bending the rules, dodging detention, and getting away with pranks at Springfield Elementary.",
-      "user_id": 2
-    },
-    {
-      "title": "D'oh-lights and D'oh-sasters: Homer's Kitchen Chronicles",
-      "description": "From mouth-watering delicacies to catastrophic kitchen disasters, follow my culinary escapades as I navigate the world of food one donut at a time.",
-      "user_id": 3
-    },
-    {
-      "title": "Marge's Guide to Balancing Family and Passion",
-      "description": "Behind my iconic blue hair lies the secret to keeping a loving family together while pursuing your own dreams. Let's paint a masterpiece called life!",
-      "user_id": 4
-    },
-    {
-      "title": "The Secret Language of Baby Talk",
-      "description": "Goo goo, gaga! Decoding the adorable gibberish that comes out of a baby's mouth. Learn to understand and appreciate the unique dialect of little ones.",
-      "user_id": 5
-    },
-    {
-      "title": "Ned Flanders' Guide to Being a Good Samaritan",
-      "description": "Neighborly love, charity, and faith are the pillars of a virtuous life. Join me as we explore the values that make the world a better place.",
-      "user_id": 6
-    },
-    {
-      "title": "Finding Strength in Loss: Maude's Legacy",
-      "description": "Though she may be gone, Maude's spirit continues to inspire us. Together, let's celebrate her life, her faith, and the lessons she left behind.",
-      "user_id": 7
-    },
-    {
-      "title": "Unleashing the Power of Nuclear Energy",
-      "description": "In my quest for limitless power, I delve into the science, history, and impact of nuclear energy. Join me on this atomic journey!",
-      "user_id": 8
-    },
-    {
-      "title": "Behind Closed Doors: The Mr. Burns You Don't Know",
-      "description": "As the right-hand man of Mr. Burns, I've witnessed his eccentricities and secrets. Explore the shadows of power and the true nature of Springfield's richest man.",
-      "user_id": 9
-    },
-    {
-      "title": "Laughing All the Way to the Sideshow",
-      "description": "Step right up and discover the story of Krusty the Clown, from the circus to TV fame. Join me in the world of comedy, chaos, and endless laughter!",
-      "user_id": 10
-    }
+  {
+    "title": "The Importance of Music Education",
+    "description": "As a young prodigy, I believe music education is key to nurturing talent and fostering creativity. Let's harmonize our way to a brighter future!",
+    "user_id": 1
+  },
+  {
+    "title": "Pranks, Skateboards, and Adventure",
+    "description": "Being a mischievous troublemaker, I've got plenty of tales to share. Join me as we embark on crazy escapades together!",
+    "user_id": 2
+  },
+  {
+    "title": "A Day in the Life of Homer Simpson",
+    "description": "D'oh! Follow me on a journey through my daily struggles, from surviving at work to dodging chores. Life with me is never boring!",
+    "user_id": 3
+  },
+  {
+    "title": "The Joys and Challenges of Motherhood",
+    "description": "From managing a chaotic household to finding time for self-care, being a dedicated mom has its ups and downs. Let's embrace the beauty of motherhood together!",
+    "user_id": 4
+  },
+  {
+    "title": "Silent Wisdom: Lessons from a Pacifier",
+    "description": "Goo goo ga ga! Though I may be small, I have a lot to say. Discover the profound insights I've gathered from the world around me.",
+    "user_id": 5
+  },
+  {
+    "title": "Embracing Neighborly Love",
+    "description": "Hi-diddly-ho, neighborinos! Join me as we explore the values of kindness, community, and spreading positivity in our neighborhood.",
+    "user_id": 6
+  },
+  {
+    "title": "Remembering Maude: An Angel Among Us",
+    "description": "In loving memory of my dear late wife, Maude. Her spirit continues to guide us, reminding us to cherish each precious moment.",
+    "user_id": 7
+  },
+  {
+    "title": "Excellence and the Pursuit of Power",
+    "description": "Excellent! Step into the world of corporate dominance and learn the art of success from yours truly, Montgomery Burns.",
+    "user_id": 8
+  },
+  {
+    "title": "Confessions of a Loyal Assistant",
+    "description": "Mr. Burns may be the boss, but my secrets hold the key to his true nature. Join me in the shadows as we uncover his hidden world.",
+    "user_id": 9
+  },
+  {
+    "title": "The Humor Behind the Makeup",
+    "description": "Hey hey! Welcome to my world of laughter, failed gags, and the struggles of being a clown. Let's discover the truth behind the greasepaint!",
+    "user_id": 10
+  },
+  {
+    "title": "Navigating the World of Jazz",
+    "description": "From swing to bebop, explore the rich history and captivating rhythms of jazz. Join me on a melodic journey through the evolution of this iconic genre.",
+    "user_id": 1
+  },
+  {
+    "title": "Bart's Guide to Outsmarting Authority",
+    "description": "Principal Skinner, beware! Learn my top tips and tricks for bending the rules, dodging detention, and getting away with pranks at Springfield Elementary.",
+    "user_id": 2
+  },
+  {
+    "title": "D'oh-lights and D'oh-sasters: Homer's Kitchen Chronicles",
+    "description": "From mouth-watering delicacies to catastrophic kitchen disasters, follow my culinary escapades as I navigate the world of food one donut at a time.",
+    "user_id": 3
+  },
+  {
+    "title": "Marge's Guide to Balancing Family and Passion",
+    "description": "Behind my iconic blue hair lies the secret to keeping a loving family together while pursuing your own dreams. Let's paint a masterpiece called life!",
+    "user_id": 4
+  },
+  {
+    "title": "The Secret Language of Baby Talk",
+    "description": "Goo goo, gaga! Decoding the adorable gibberish that comes out of a baby's mouth. Learn to understand and appreciate the unique dialect of little ones.",
+    "user_id": 5
+  },
+  {
+    "title": "Ned Flanders' Guide to Being a Good Samaritan",
+    "description": "Neighborly love, charity, and faith are the pillars of a virtuous life. Join me as we explore the values that make the world a better place.",
+    "user_id": 6
+  },
+  {
+    "title": "Finding Strength in Loss: Maude's Legacy",
+    "description": "Though she may be gone, Maude's spirit continues to inspire us. Together, let's celebrate her life, her faith, and the lessons she left behind.",
+    "user_id": 7
+  },
+  {
+    "title": "Unleashing the Power of Nuclear Energy",
+    "description": "In my quest for limitless power, I delve into the science, history, and impact of nuclear energy. Join me on this atomic journey!",
+    "user_id": 8
+  },
+  {
+    "title": "Behind Closed Doors: The Mr. Burns You Don't Know",
+    "description": "As the right-hand man of Mr. Burns, I've witnessed his eccentricities and secrets. Explore the shadows of power and the true nature of Springfield's richest man.",
+    "user_id": 9
+  },
+  {
+    "title": "Laughing All the Way to the Sideshow",
+    "description": "Step right up and discover the story of Krusty the Clown, from the circus to TV fame. Join me in the world of comedy, chaos, and endless laughter!",
+    "user_id": 10
+  }
 ]

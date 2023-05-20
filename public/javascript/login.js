@@ -7,34 +7,34 @@ const loginBtn = document.querySelector('.loginBtn');
 const loginStatusEl = document.getElementById('log-status');
 
 const loginFormHandler = async (event) => {
-    event.preventDefault();
+  event.preventDefault();
 
-    const email = document.querySelector('#email-login').value.trim();
-    const password = document.querySelector('#password-login').value.trim();
+  const email = document.querySelector('#email-login').value.trim();
+  const password = document.querySelector('#password-login').value.trim();
 
-    if (email && password) {
-        const response = await fetch('/api/users/login', {
-            method: 'POST',
-            body: JSON.stringify({ email, password }),
-            headers: { 'Content-Type': 'application/json' },
-        });
+  if (email && password) {
+    const response = await fetch('/api/users/login', {
+      method: 'POST',
+      body: JSON.stringify({ email, password }),
+      headers: { 'Content-Type': 'application/json' },
+    });
 
-        if (response.ok) {
-            document.location.replace('/dashboard');
-        } else {
-            loginStatusEl.textContent = 'Incorrect Email or Password';
-            loginStatusEl.style.color = 'red';
-            setTimeout(() => {
-                loginStatusEl.textContent = 'Fill in all required values';
-                loginStatusEl.style.color = 'black';
-            }, 2500);
-        }
+    if (response.ok) {
+      document.location.replace('/dashboard');
+    } else {
+      loginStatusEl.textContent = 'Incorrect Email or Password';
+      loginStatusEl.style.color = 'red';
+      setTimeout(() => {
+        loginStatusEl.textContent = 'Fill in all required values';
+        loginStatusEl.style.color = 'black';
+      }, 2500);
     }
+  }
 };
 
 const signupRedirectHandler = async (event) => {
-    event.preventDefault();
-    document.location.replace('/signup');
+  event.preventDefault();
+  document.location.replace('/signup');
 };
 
 // const goLoginHandler = async (event) => {
