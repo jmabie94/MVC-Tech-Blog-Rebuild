@@ -4,7 +4,7 @@ const loginBtn = document.querySelector('.loginBtn');
 // const sendToLogin = document.querySelector('.loginRedirect');
 // I don't have a status element in the handlebars yet, but once I do this'll work
 
-const loginStatusEl = document.getElementById('status');
+const loginStatusEl = document.getElementById('log-status');
 
 const loginFormHandler = async (event) => {
     event.preventDefault();

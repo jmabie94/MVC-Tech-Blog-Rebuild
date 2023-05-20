@@ -191,8 +191,8 @@ router.get('/blogposts/:id', withAuth, async (req, res) => {
     const title = dbBlogPostData.dataValues.title;
     const user = dbBlogPostData.dataValues.user.username;
     const user_id = dbBlogPostData.dataValues.user.id;
-    const date = dbBlogPostData.dataValues.createdAt;
-    // createdAt rather than created_at still confusing
+    const date = dbBlogPostData.dataValues.created_at;
+    // created_at rather than created_at still confusing
     console.log('dbBlogPostData.datavalues: ', dbBlogPostData.dataValues);
     const description = dbBlogPostData.dataValues.description;
     const blogPost = {

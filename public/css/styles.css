@@ -44,6 +44,18 @@ form {
     margin-bottom: 1rem;
 }
 
+#new-blogpost {
+    display: contents;
+}
+
+#edit-blogpost {
+    display: contents;
+}
+
+.card .content {
+    text-align: left;
+}
+
 @media screen and (max-width: 1023px) {
     .navbar-dropdown.is-hidden-touch {
         display: none;

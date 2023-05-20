@@ -4,7 +4,7 @@ const signUpBtn = document.querySelector('.processBtn');
 // const sendToSignup = document.querySelector('.signupRedirect');
 // I don't have a status element in the handlebars yet, but once I do this'll work
 
-const signupStatusEl = document.getElementById('status');
+const signupStatusEl = document.getElementById('sign-status');
 
 const signupFormHandler = async (event) => {
     event.preventDefault();
