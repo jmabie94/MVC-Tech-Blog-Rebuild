@@ -107,19 +107,49 @@ router.get('/dashboard', withAuth, async (req, res) => {
 });
 
 // get a list of ALL users, each one hyperlinks to user/:id routing
+
+// some refactoring so that this route works
 router.get('/allusers', withAuth, async (req, res) => {
   try {
-    const allUserData = await User.findAll({
+    const allUsers = await User.findAll({
       attributes: ['id', 'username'],
+      include: [
+        {
+          model: BlogPost,
+          attributes: [],
+        },
+        {
+          model: Comment,
+          attributes: [],
+        },
+      ],
+      group: ['User.id'],
+      raw: true,
+      nest: true,
     });
 
-    const allUsers = allUserData.users.map((user) => user.get({ plain: true }));
-    console.log(allUsers);
+    const userCountsPromises = allUsers.map(async (user) => {
+      const blogpostCount = await BlogPost.count({
+        where: { user_id: user.id },
+      });
+
+      const commentCount = await Comment.count({
+        where: { user_id: user.id },
+      });
+
+      return {
+        ...user,
+        blogpostCount,
+        commentCount,
+      };
+    });
+
+    const usersWithCounts = await Promise.all(userCountsPromises);
+    console.log(usersWithCounts);
 
     res.render('user-directory', {
-      allUsers,
+      allUsers: usersWithCounts,
       logged_in: req.session.logged_in,
-      user: allUserData.dataValues,
       username: req.session.username,
     });
   } catch (err) {
