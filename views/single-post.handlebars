@@ -1,11 +1,6 @@
 <div class="card">
     <div class="card-content">
         <div class="media">
-            <div class="media-left">
-                <figure class="image is-48x48">
-                    <img src="/images/whosethot.png" alt="Placeholder image">
-                </figure>
-            </div>
             <div class="media-content">
                 <p class="title is-2">{{blogPost.title}}</p>
                 <p class="subtitle is-4">
@@ -17,7 +12,7 @@
         <div class="content">
             {{blogPost.description}}
             <br>
-            <p>Date Posted: {{format_date blogPost.date}}</p>
+            <p>Date Posted: {{format_date blogPost.createdAt}}</p>
         </div>
 
         <footer class="card-footer">
