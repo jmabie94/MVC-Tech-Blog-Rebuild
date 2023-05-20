@@ -61,6 +61,22 @@ form {
   text-align: left;
 }
 
+.card-footer {
+  text-align: left;
+  justify-content: left;
+  display: contents;
+}
+
+#new-comment {
+  text-align-last: left;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+
+#new-comment .field.is-grouped {
+  justify-content: left !important;
+}
+
 @media screen and (max-width: 1023px) {
   .navbar-dropdown.is-hidden-touch {
     display: none;

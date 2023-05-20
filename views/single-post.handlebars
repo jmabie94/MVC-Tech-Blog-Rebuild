@@ -16,6 +16,8 @@
         </div>
 
         <footer class="card-footer">
+            <input type="hidden" id="post-id" value="{{blogPost.post_id}}">
+            <input type="hidden" id="user-id" value="{{blogPost.user_id}}">
             {{#if blogPost.comments}}
             <div class="card-comments">
                 {{#each blogPost.comments as |comment| }}
@@ -54,4 +56,5 @@
 <script src="/javascript/newcomment.js"></script>
 <script src="/javascript/editcomment.js"></script>
 <script src="/javascript/deletecomment.js"></script>
-{{!-- how to make it so that when someone clicks addCommentBtn it makes an additional textbox show on the page with two new buttons for saveComment and cancelComment? --}}
+{{!-- how to make it so that when someone clicks addCommentBtn it makes an additional textbox show on the page with two
+new buttons for saveComment and cancelComment? --}}

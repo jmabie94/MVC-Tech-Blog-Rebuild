@@ -19,12 +19,16 @@
                 <p>Date Posted: {{format_date blogpost.createdAt}}</p>
             </div>
             <footer class="card-footer">
+                <input type="hidden" id="post-id" value="{{blogpost.id}}">
+                <input type="hidden" id="user-id" value="{{userId}}">
                 {{#if blogpost.comments}}
                 <div class="card-comments">
                     {{#each blogpost.comments as |comment|}}
                     <div class="comment-title">
-                        <p class="title is-4">{{comment.user}}</p>
-                        <p class="subtitle is-6">{{comment.date}}</p>
+                        <p class="title is-4">
+                            <a href="/user/{{comment.user.user_id}}">{{comment.user.username}}</a>
+                        </p>
+                        <p class="subtitle is-6">{{format_date comment.date}}</p>
                     </div>
                     {{#if comment.usersComment}}
                     <div class="comment-content is-highlighted">
@@ -44,9 +48,9 @@
                     <br>
                     {{/if}}
                     {{/each}}
-                    <button class="button is-primary addCommentBtn">Add a Comment</button>
+                    <button class="button is-primary is-small addCommentBtn">Add a Comment</button>
                     {{else}}
-                    <button class="button is-primary addCommentBtn">Add the First Comment!</button>
+                    <button class="button is-primary is-small addCommentBtn">Add the First Comment!</button>
                     {{/if}}
                 </div>
             </footer>

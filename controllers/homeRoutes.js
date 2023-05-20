@@ -159,28 +159,69 @@ router.get('/allusers', withAuth, async (req, res) => {
 });
 
 // get a list of ALL blogposts by specific user
+
+// attempting to refactor so that comments show under each blogpost
 router.get('/user/:id', withAuth, async (req, res) => {
   try {
     const userBlogPostData = await User.findByPk(req.params.id, {
       include: [
         {
           model: BlogPost,
-          include: [Comment],
+          include: [
+            {
+              model: Comment,
+              include: [User],
+            },
+          ],
         },
       ],
       attributes: ['id', 'username'],
     });
 
-    const userBlogPosts = userBlogPostData.blogposts.map((blogpost) =>
-      blogpost.get({ plain: true })
-    );
+    const userBlogPosts = userBlogPostData.blogposts.map((blogpost) => {
+      const { id, title, description, user_id, createdAt, updatedAt } =
+        blogpost.get({ plain: true });
+
+      const comments = blogpost.comments.map((comment) => {
+        const {
+          id: commentId,
+          comment_text,
+          createdAt,
+          user,
+        } = comment.get({ plain: true });
+
+        return {
+          commentId,
+          text: comment_text,
+          date: createdAt,
+          user: {
+            username: user.username,
+            user_id: user.id,
+          },
+          usersComment: user.username === req.session.username,
+        };
+      });
+
+      return {
+        id,
+        title,
+        description,
+        user_id,
+        createdAt,
+        updatedAt,
+        comments,
+      };
+    });
+
     console.log(userBlogPosts);
 
+    // in theory adding userId in the render will help the newcomment.js work properly
     res.render('single-user', {
       userBlogPosts,
       logged_in: req.session.logged_in,
       user: userBlogPostData.dataValues,
       username: req.session.username,
+      userId: req.session.user_id,
     });
   } catch (err) {
     console.log(err);
@@ -218,6 +259,7 @@ router.get('/blogposts/:id', withAuth, async (req, res) => {
       ],
     });
 
+    const post_id = dbBlogPostData.dataValues.id;
     const title = dbBlogPostData.dataValues.title;
     const user = dbBlogPostData.dataValues.user.username;
     const user_id = dbBlogPostData.dataValues.user.id;
@@ -226,6 +268,7 @@ router.get('/blogposts/:id', withAuth, async (req, res) => {
     console.log('dbBlogPostData.datavalues: ', dbBlogPostData.dataValues);
     const description = dbBlogPostData.dataValues.description;
     const blogPost = {
+      post_id,
       title,
       date,
       user,
