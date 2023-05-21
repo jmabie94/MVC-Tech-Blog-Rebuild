@@ -18,6 +18,14 @@
                 <br>
                 <p>Date Posted: {{format_date blogpost.createdAt}}</p>
             </div>
+            {{!-- display options to edit or delete if the posts displayed belong to the user, they can do this on the
+            dashboard or on their user/:id page --}}
+            {{#if usersPost}}
+            <div>
+                <button class="button is-light editPostBtn" data-blogpost-id="{{blogpost.id}}">Edit Post</button>
+                <button class="button is-danger deletePostBtn" data-blogpost-id="{{blogpost.id}}">Delete Post</button>
+            </div>
+            {{/if}}
             <footer class="card-footer">
                 <input type="hidden" id="post-id" value="{{blogpost.id}}">
                 <input type="hidden" id="user-id" value="{{userId}}">
@@ -35,9 +43,11 @@
                         {{comment.text}}
                     </div>
                     <div>
-                        <button class="button is-light is-small editCommentBtn" data-comment-id="{{comment.commentId}}">Edit Comment
+                        <button class="button is-light is-small editCommentBtn"
+                            data-comment-id="{{comment.commentId}}">Edit Comment
                         </button>
-                        <button class="button is-danger is-small deleteCommentBtn" data-comment-id="{{comment.commentId}}">Delete Comment
+                        <button class="button is-danger is-small deleteCommentBtn"
+                            data-comment-id="{{comment.commentId}}">Delete Comment
                         </button>
                     </div>
                     <br>
@@ -67,5 +77,5 @@
 <script src="/javascript/editcomment.js"></script>
 <script src="/javascript/newcomment.js"></script>
 <script src="/javascript/deletecomment.js"></script>
-{{!-- how to make it so that when someone clicks addCommentBtn it makes an additional textbox show on the page with two
-new buttons for saveComment and cancelComment? --}}
+<script src='/javascript/editpost.js'></script>
+<script src='/javascript/deletepost.js'></script>

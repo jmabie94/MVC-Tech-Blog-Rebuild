@@ -14,6 +14,15 @@
             <br>
             <p>Date Posted: {{format_date blogPost.date}}</p>
         </div>
+        {{!-- display options to edit or delete if the individual post isplayed belongs to the user, they can do this on
+        the dashboard or on a given blogposts/:id page --}}
+
+        {{#if blogPost.usersPost}}
+        <div>
+            <button class="button is-light editPostBtn" data-blogpost-id="{{blogPost.id}}">Edit Post</button>
+            <button class="button is-danger deletePostBtn" data-blogpost-id="{{blogPost.id}}">Delete Post</button>
+        </div>
+        {{/if}}
 
         <footer class="card-footer">
             <input type="hidden" id="post-id" value="{{blogPost.post_id}}">
@@ -24,7 +33,7 @@
                 <div class="comment-title">
                     <p class="title is-5">
                         <a href="/user/{{comment.userId}}">{{comment.user}}</a>
-                        </p>
+                    </p>
                     <p class="subtitle is-6">{{format_date comment.date}}</p>
                 </div>
                 {{#if comment.usersComment}}
@@ -33,9 +42,11 @@
                     {{comment.text}}
                 </div>
                 <div>
-                    <button class="button is-light is-small editCommentBtn" data-comment-id="{{comment.commentId}}">Edit Comment
+                    <button class="button is-light is-small editCommentBtn" data-comment-id="{{comment.commentId}}">Edit
+                        Comment
                     </button>
-                    <button class="button is-danger is-small deleteCommentBtn" data-comment-id="{{comment.commentId}}">Delete Comment
+                    <button class="button is-danger is-small deleteCommentBtn"
+                        data-comment-id="{{comment.commentId}}">Delete Comment
                     </button>
                 </div>
                 <br>
@@ -59,5 +70,5 @@
 <script src="/javascript/newcomment.js"></script>
 <script src="/javascript/editcomment.js"></script>
 <script src="/javascript/deletecomment.js"></script>
-{{!-- how to make it so that when someone clicks addCommentBtn it makes an additional textbox show on the page with two
-new buttons for saveComment and cancelComment? --}}
+<script src='/javascript/editpost.js'></script>
+<script src='/javascript/deletepost.js'></script>

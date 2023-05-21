@@ -210,6 +210,7 @@ router.get('/user/:id', withAuth, async (req, res) => {
         createdAt,
         updatedAt,
         comments,
+        usersPost: user_id === req.session.user_id,
       };
     });
 
@@ -275,6 +276,7 @@ router.get('/blogposts/:id', withAuth, async (req, res) => {
       user_id,
       description,
       comments: [],
+      usersPost: user_id === req.session.user_id,
     };
 
     for (let i = 0; i < dbBlogPostData.dataValues.comments.length; i++) {
