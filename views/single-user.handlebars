@@ -25,7 +25,7 @@
                 <div class="card-comments">
                     {{#each blogpost.comments as |comment|}}
                     <div class="comment-title">
-                        <p class="title is-4">
+                        <p class="title is-5">
                             <a href="/user/{{comment.user.user_id}}">{{comment.user.username}}</a>
                         </p>
                         <p class="subtitle is-6">{{format_date comment.date}}</p>
@@ -35,9 +35,9 @@
                         {{comment.text}}
                     </div>
                     <div>
-                        <button class="button is-light editCommentBtn">Edit Comment
+                        <button class="button is-light is-small editCommentBtn" data-comment-id="{{comment.commentId}}">Edit Comment
                         </button>
-                        <button class="button is-danger deleteCommentBtn">Delete Comment
+                        <button class="button is-danger is-small deleteCommentBtn" data-comment-id="{{comment.commentId}}">Delete Comment
                         </button>
                     </div>
                     <br>
