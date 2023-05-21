@@ -1,6 +1,9 @@
 function displayUpdateCommentFormHandler(event) {
   const editButton = event.target;
   editButton.style.display = 'none';
+  // why is this not working?
+  // const nearbyDelete = event.target.closest('.deleteCommentBtn');
+  // nearbyDelete.style.display = 'none';
 
   const updateFooter = event.target.closest('.card-footer');
 
