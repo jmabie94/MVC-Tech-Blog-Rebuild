@@ -70,7 +70,7 @@ function displayUpdateCommentFormHandler(event) {
 
   cancelUpdateBtn.addEventListener('click', (event) => {
     event.preventDefault();
-    updateCancelHandler();
+    updateCommentCancelHandler();
   });
 }
 
@@ -121,6 +121,6 @@ const updateCommentHandler = (commentId) => {
   }
 };
 
-const updateCancelHandler = () => {
+const updateCommentCancelHandler = () => {
   document.location.reload();
 };

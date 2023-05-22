@@ -18,9 +18,9 @@
         the dashboard or on a given blogposts/:id page --}}
 
         {{#if blogPost.usersPost}}
-        <div>
-            <button class="button is-light editPostBtn" data-blogpost-id="{{blogPost.id}}">Edit Post</button>
-            <button class="button is-danger deletePostBtn" data-blogpost-id="{{blogPost.id}}">Delete Post</button>
+        <div class="content">
+            <button class="button is-light editPostBtn" data-blogpost-id="{{blogPost.post_id}}">Edit Post</button>
+            <button class="button is-danger deletePostBtn" data-blogpost-id="{{blogPost.post_id}}">Delete Post</button>
         </div>
         {{/if}}
 
@@ -70,5 +70,5 @@
 <script src="/javascript/newcomment.js"></script>
 <script src="/javascript/editcomment.js"></script>
 <script src="/javascript/deletecomment.js"></script>
-<script src='/javascript/editpost2.js'></script>
+<script src='/javascript/editpost.js'></script>
 <script src='/javascript/deletepost2.js'></script>

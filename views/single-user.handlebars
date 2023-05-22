@@ -21,7 +21,7 @@
             {{!-- display options to edit or delete if the posts displayed belong to the user, they can do this on the
             dashboard or on their user/:id page --}}
             {{#if usersPost}}
-            <div>
+            <div class="content">
                 <button class="button is-light editPostBtn" data-blogpost-id="{{blogpost.id}}">Edit Post</button>
                 <button class="button is-danger deletePostBtn" data-blogpost-id="{{blogpost.id}}">Delete Post</button>
             </div>
@@ -77,5 +77,5 @@
 <script src="/javascript/editcomment.js"></script>
 <script src="/javascript/newcomment.js"></script>
 <script src="/javascript/deletecomment.js"></script>
-<script src='/javascript/editpost3.js'></script>
+<script src='/javascript/editpost.js'></script>
 <script src='/javascript/deletepost3.js'></script>

@@ -9,8 +9,8 @@
         <th><abbr title='Number of Comments'>Comments</abbr></th>
         <th>Blog Post Content</th>
         {{#if blogposts}}
-        <th>Edit</th>
-        <th>Delete</th>
+          <th>Edit</th>
+          <th>Delete</th>
         {{/if}}
       </tr>
     </thead>
@@ -21,33 +21,39 @@
         <th><abbr title='Number of Comments'>Comments</abbr></th>
         <th>Blog Post Content</th>
         {{#if blogposts}}
-        <th>Edit</th>
-        <th>Delete</th>
+          <th>Edit</th>
+          <th>Delete</th>
         {{/if}}
       </tr>
     </tfoot>
     <tbody>
       {{#if blogposts}}
-      {{#each blogposts as |blogpost|}}
-      <tr>
-        <td><a href='/blogposts/{{blogpost.id}}'>{{blogpost.title}}</a></td>
-        <td>{{format_date blogpost.created_at}}</td>
-        <td>{{blogpost.comments.length}}</td>
-        <td>{{blogpost.description}}</td>
-        <td><button class='button is-light editPostBtn' data-blogpost-id="{{blogpost.id}}">Edit Post</button></td>
-        <td><button class='button is-danger deletePostBtn' data-blogpost-id="{{blogpost.id}}">Delete Post</button></td>
-      </tr>
-      {{/each}}
+        {{#each blogposts as |blogpost|}}
+          <tr>
+            <td><a href='/blogposts/{{blogpost.id}}'>{{blogpost.title}}</a></td>
+            <td>{{format_date blogpost.created_at}}</td>
+            <td>{{blogpost.comments.length}}</td>
+            <td>{{blogpost.description}}</td>
+            <td><button
+                class='button is-light editPostBtn'
+                data-blogpost-id='{{blogpost.id}}'
+              >Edit Post</button></td>
+            <td><button
+                class='button is-danger deletePostBtn'
+                data-blogpost-id='{{blogpost.id}}'
+              >Delete Post</button></td>
+          </tr>
+        {{/each}}
       {{else}}
-      <tr>
-        <td><a href='/newpost'>Create Your First Blog Post!</a></td>
-        <td>N/A</td>
-        <td>N/A</td>
-        <td>Once You Have Blog Posts They Will Appear Here</td>
-      </tr>
+        <tr>
+          <td><a href='/newpost'>Create Your First Blog Post!</a></td>
+          <td>N/A</td>
+          <td>N/A</td>
+          <td>Once You Have Blog Posts They Will Appear Here</td>
+        </tr>
       {{/if}}
     </tbody>
   </table>
 </div>
-<script src='/javascript/editpost1.js'></script>
+<script src='/javascript/editpost.js'></script>
 <script src='/javascript/deletepost1.js'></script>
