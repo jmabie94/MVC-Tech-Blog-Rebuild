@@ -60,51 +60,51 @@ Finally, navigate to http://localhost:3001 to utilize the website!
 
 ### Homepage With All Posts:
 
-![Homepage](/media/blog-homepage-all-posts.png)
+![Homepage](/public/media/blog-homepage-all-posts.png)
 
 ### Homepage With Dropdown Navigation:
 
-![Dropdown Navbar](/media/blog-homepage-all-posts-navbar-dropdown.png)
+![Dropdown Navbar](/public/media/blog-homepage-all-posts-navbar-dropdown.png)
 
 ### Dashboard With Logged-In User's Posts:
 
-![Dashboard](/media/blog-dashboard.png)
+![Dashboard](/public/media/blog-dashboard.png)
 
 ### Dashboard With Edit Post Form:
 
-![Dashboard - Edit Post](/media/blog-dashboard-edit-post.png)
+![Dashboard - Edit Post](/public/media/blog-dashboard-edit-post.png)
 
 ### Dashboard With Updated Post:
 
-![Dashboard - Updated Post](/media/blog-dashboard-updated-post.png)
+![Dashboard - Updated Post](/public/media/blog-dashboard-updated-post.png)
 
 ### Write New Post:
 
-![New Post Form](/media/blog-write-new-post.png)
+![New Post Form](/public/media/blog-write-new-post.png)
 
 ### Dashboard With New Post Added:
 
-![Dashboard - New Post](/media/blog-dashboard-new-post-added.png)
+![Dashboard - New Post](/public/media/blog-dashboard-new-post-added.png)
 
 ### Adding A Comment By Visiting Another User's Profile:
 
-![Other User's Profile - Add Comment to Post](/media/blog-other-users-profile-adding-comment.png)
+![Other User's Profile - Add Comment to Post](/public/media/blog-other-users-profile-adding-comment.png)
 
 ### Comment Added To Another User's Post - Profile View:
 
-![Other User's Profile - Comment Added](/media/blog-other-users-profile-comment-posted.png)
+![Other User's Profile - Comment Added](/public/media/blog-other-users-profile-comment-posted.png)
 
 ### Editing A Comment By Visiting The Specific Post's Page:
 
-![Specific Post - Editing Comment](/media/blog-single-post-edit-comment.png)
+![Specific Post - Editing Comment](/public/media/blog-single-post-edit-comment.png)
 
 ### Comment Updated - Profile View:
 
-![Other User's Profile - Comment Updated](/media/blog-other-users-profile-updated-comment.png)
+![Other User's Profile - Comment Updated](/public/media/blog-other-users-profile-updated-comment.png)
 
 ### User Directory With Post Count and Comment Count (Outgoing, not Received):
 
-![Directory of All Users](/media/blog-user-directory.png)
+![Directory of All Users](/public/media/blog-user-directory.png)
 ​
 
 ## Credits
