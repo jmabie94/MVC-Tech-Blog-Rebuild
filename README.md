@@ -115,6 +115,7 @@ Finally, navigate to http://localhost:3001 to utilize the website!
 ## Technology Used
 
     - Javascript
+    - Bulma
     - MySQL
     - Sequelize
     - Express-Handlebars
