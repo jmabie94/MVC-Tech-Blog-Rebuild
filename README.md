@@ -3,22 +3,27 @@
 ## Description
 
 #### Attempt to refactor and repair Module 14's MVC Tech Blog challenge, starting over almost entirely. In order to spruce up the approach, I made all of the functions identical to what they would be for a "Tech" blog, but changed the seeds, design and demo posts to instead match a Simpsons theme (just for fun).
+
 ---
 
 ## Contents
+
 - [User Story](#user-story)
 - [Installation](#installation)
 - [Media](#media)
 - [Credits](#credits)
 - [Technology Used](#technology-used)
 - [License](#license)
-​
+  ​
+
 ### User Story
+
 ```md
 AS A developer who writes about tech
 I WANT a CMS-style blog site
 SO THAT I can publish articles, blog posts, and my thoughts and opinions
 ```
+
 ## Installation:
 
 Utilizing the Application is simple!
@@ -26,11 +31,11 @@ Utilizing the Application is simple!
 Option A - Use the Heroku deployment directly by way of (heroku link).
 
 Option B - Clone the repo:
-    
+
     git clone git@github.com:jmabie94/MVC-Tech-Blog-Rebuild.git
 
 Next, open an integrated terminal in your cloned folder and do the following:
-    
+
     run "npm init -y"
     run "npm i"
 
@@ -50,36 +55,49 @@ Your database is now fully seeded and you can start your application:
 
 Finally, navigate to http://localhost:3001 to utilize the website!
 ​
+
 ## Media
 
 ### Homepage:
+
 ![First Screenshot]()
 
 ### Dashboard:
+
 ![Second Screenshot]()
 
 ### Write New Post:
+
 ![Third Screenshot]()
 
 ### Write New Comment:
+
 ![Fourth Screenshot]()
 
 ### User Directory:
+
 ![Fifth Screenshot]()
 ​
+
 ## Credits
+
 - Jack Mabie (https://github.com/jmabie94)
-​
+  ​
+
 ## Technology Used
+
     - Javascript
     - MySQL
     - Sequelize
-    - Handlebars
+    - Express-Handlebars
     - Regexes
     - Heroku
     - MVC
-    
+    - Dotenv
+    - Bcrpyt
+
 ## License
+
 ​
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ​
@@ -101,4 +119,5 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ​
+
 ---

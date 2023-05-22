@@ -10,23 +10,19 @@ function displayEditPostFormHandler(event) {
     updateTableData = event.target.closest('.dashboard-wrapper');
     postId = editButton.dataset.blogpostId;
     console.log('trying to find the id', editButton.dataset.blogpostId);
-  } else if (
-    document.location.pathname.match(/\/blogposts\/(\d+)/)
-  ) {
+  } else if (document.location.pathname.match(/\/blogposts\/(\d+)/)) {
     updateFooter = event.target.closest('.content');
     postId = editButton.dataset.blogpostId;
     console.log('trying to find the id', editButton.dataset);
-  } else if (
-    document.location.pathname.match(/\/user\/(\d+)/)
-  ) {
+  } else if (document.location.pathname.match(/\/user\/(\d+)/)) {
     updateFooter = event.target.closest('.content');
     postId = editButton.dataset.blogpostId;
     console.log('trying to find the id', editButton.dataset);
   }
 
-  console.log("postId", postId);
-  console.log("updateTableData", updateTableData);
-  console.log("updateFooter", updateFooter);
+  console.log('postId', postId);
+  console.log('updateTableData', updateTableData);
+  console.log('updateFooter', updateFooter);
 
   const form = document.createElement('form');
   form.id = `edit-post-${postId}`;

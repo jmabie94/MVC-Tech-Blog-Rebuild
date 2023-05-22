@@ -1,8 +1,10 @@
 function deleteCommentMacroHandler(event) {
   const deleteButton = event.target;
   deleteButton.style.display = 'none';
-  const nearbyEdit = event.target.closest('.editCommentBtn');
-  nearbyEdit.style.display = 'none';
+  // why is this one working when it's not working for the editComment function? or for the deletePost function?
+  // removing because if it can't be consistent across all buttons, why bother having it just on the one kind
+  // const nearbyEdit = event.target.closest('.editCommentBtn');
+  // nearbyEdit.style.display = 'none';
 
   const commentId = deleteButton.dataset.commentId;
 
