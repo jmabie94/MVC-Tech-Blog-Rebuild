@@ -29,6 +29,7 @@ const signupFormHandler = async (event) => {
         signupStatusEl.textContent = 'Fill in all required values';
         signupStatusEl.style.color = 'black';
       }, 2500);
+      document.location.reload();
     }
   }
 };

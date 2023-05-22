@@ -28,6 +28,7 @@ const loginFormHandler = async (event) => {
         loginStatusEl.textContent = 'Fill in all required values';
         loginStatusEl.style.color = 'black';
       }, 2500);
+      document.location.reload();
     }
   }
 };

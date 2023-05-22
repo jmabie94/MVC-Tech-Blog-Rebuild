@@ -14,10 +14,12 @@ document.addEventListener('DOMContentLoaded', () => {
       navbarStart.style.textAlignLast = 'right';
       navbarEnd.style.display = 'flex';
       navbarEnd.style.justifyContent = 'flex-end';
+      navbarEnd.style.alignItems = 'center';
     } else {
       navbarStart.style.textAlignLast = '';
       navbarEnd.style.display = '';
       navbarEnd.style.justifyContent = '';
+      navbarEnd.style.alignItems = '';
     }
   });
 });

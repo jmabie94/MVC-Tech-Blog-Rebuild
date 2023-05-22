@@ -58,25 +58,53 @@ Finally, navigate to http://localhost:3001 to utilize the website!
 
 ## Media
 
-### Homepage:
+### Homepage With All Posts:
 
-![First Screenshot]()
+![Homepage](/media/blog-homepage-all-posts.png)
 
-### Dashboard:
+### Homepage With Dropdown Navigation:
 
-![Second Screenshot]()
+![Dropdown Navbar](/media/blog-homepage-all-posts-navbar-dropdown.png)
+
+### Dashboard With Logged-In User's Posts:
+
+![Dashboard](/media/blog-dashboard.png)
+
+### Dashboard With Edit Post Form:
+
+![Dashboard - Edit Post](/media/blog-dashboard-edit-post.png)
+
+### Dashboard With Updated Post:
+
+![Dashboard - Updated Post](/media/blog-dashboard-updated-post.png)
 
 ### Write New Post:
 
-![Third Screenshot]()
+![New Post Form](/media/blog-write-new-post.png)
 
-### Write New Comment:
+### Dashboard With New Post Added:
 
-![Fourth Screenshot]()
+![Dashboard - New Post](/media/blog-dashboard-new-post-added.png)
 
-### User Directory:
+### Adding A Comment By Visiting Another User's Profile:
 
-![Fifth Screenshot]()
+![Other User's Profile - Add Comment to Post](/media/blog-other-users-profile-adding-comment.png)
+
+### Comment Added To Another User's Post - Profile View:
+
+![Other User's Profile - Comment Added](/media/blog-other-users-profile-comment-posted.png)
+
+### Editing A Comment By Visiting The Specific Post's Page:
+
+![Specific Post - Editing Comment](/media/blog-single-post-edit-comment.png)
+
+### Comment Updated - Profile View:
+
+![Other User's Profile - Comment Updated](/media/blog-other-users-profile-updated-comment.png)
+
+### User Directory With Post Count and Comment Count (Outgoing, not Received):
+
+![Directory of All Users](/media/blog-user-directory.png)
 ​
 
 ## Credits
