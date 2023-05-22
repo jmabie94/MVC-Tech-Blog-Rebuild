@@ -2,7 +2,7 @@
 
 ## Description
 
-#### Attempt to refactor and repair Module 14's MVC Tech Blog challenge, starting over almost entirely. In order to spruce up the approach, I made all of the functions identical to what they would be for a "Tech" blog, but changed the seeds, design and demo posts to instead match a Simpsons theme (just for fun).
+#### Attempt to refactor and repair Module 14's MVC Tech Blog challenge, starting over almost entirely. In order to spruce up the approach, I made all of the functions identical to what they would be for a "Tech" blog, but changed the seeds, design and demo posts to instead match a Simpsons theme (just for fun). Original repo that I didn't finish in time: https://github.com/jmabie94/3-23-23-MVC-Tech-Blog.
 
 ---
 
