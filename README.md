@@ -28,7 +28,7 @@ SO THAT I can publish articles, blog posts, and my thoughts and opinions
 
 Utilizing the Application is simple!
 
-Option A - Use the Heroku deployment directly by way of (heroku link).
+Option A - Use the Heroku deployment directly by way of https://warm-headland-51118.herokuapp.com/.
 
 Option B - Clone the repo:
 
